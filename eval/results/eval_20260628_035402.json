@@ -1,0 +1,411 @@
+{
+  "timestamp": "20260628_035402",
+  "total": 50,
+  "passed": 25,
+  "pass_rate": 0.5,
+  "avg_faithfulness": 0.5,
+  "avg_relevancy": 0.978,
+  "overall_pass": false,
+  "results": [
+    {
+      "question": "What is the arXiv identifier for the paper \"Social AI improves well-being among female young adults\" by Zhang, E., & Lu, X.?",
+      "actual_answer": "The paper\u2019s arXiv identifier is **arXiv:2311.14706**\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f425].",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What is the accuracy percentage of Google\u2019s Gemini-3.1-Pro on the MMLU benchmark according to the text?",
+      "actual_answer": "Google\u2019s Gemini\u20113.1\u2011Pro recorded an accuracy of **91.2\u202f%** on the MMLU benchmark (specifically the MMLU\u2011Pro version)\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f81].",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "How many notable AI models originated from academia in 2025 according to the AI Index Report 2026?",
+      "actual_answer": "Two notable AI models originated from academia in\u202f2025\u202faccording to the AI\u202fIndex Report\u202f2026.\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f19]",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What percentage of respondents reported that AI agents are 'Fully scaled' in Manufacturing?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What percentage did private investment in AI grow by in 2025?",
+      "actual_answer": "I cannot answer this from the provided documents. (The generated answer did not cite its sources.)",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What was the score of Qwen3-Next-80B on the leaderboard?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "Which benchmark is mentioned as being used to measure planning capabilities in AI models?",
+      "actual_answer": "The benchmark cited for evaluating planning capabilities in AI models is **PlanBench**\u202f\u2014\u202fit assesses end\u2011to\u2011end planning by prompting models to generate full plans from structured problem descriptions across multiple planning domains\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f98].",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What was the year of the AI Index report represented by the chart?",
+      "actual_answer": "The chart is from the **2026 AI Index report**\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f56].",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What is the earliest year for which the global AI talent distribution is provided in the dataset?",
+      "actual_answer": "I cannot answer this from the provided documents. (The generated answer did not cite its sources.)",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "Which countries are listed in the 'AI Authors and Inventors' section of the AI Index Report 2026?",
+      "actual_answer": "The \u201cAI Authors and Inventors\u201d section lists the following countries:\n\n- United Arab Emirates  \n- Saudi\u202fArabia  \n- Denmark  \n- Finland  \n- Israel  \n- South\u202fKorea  \n- Japan  \n- Singapore  \n- Sweden  \n- Spain  \n- Switzerland  \n- Brazil  \n- Italy  \n- Netherlands  \n- Australia  \n- France  \n- Canada  \n- United Kingdom  \n- Germany  \n- India  \n- United\u202fStates  \n\n[Source: ai_index_report_2026 (1).pdf, page\u202f63 \u2013 Figure\u202f1.8.1 legend shows all of these countries as the set of nations for which AI\u2011author and inventor data are presented]",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What is the arXiv identifier for \"ProtAgents: Protein discovery via large language model multi-agent collaborations combining physics and machine learning\"?",
+      "actual_answer": "I cannot answer this from the provided documents. (The generated answer did not cite its sources.)",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "As of December 1, 2025, how many states emphasized AI in their CS standards?",
+      "actual_answer": "Four states emphasized AI in their computer\u2011science standards as of December\u202f1\u202f2025.\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f305]",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "According to Figure 1.1.139, what is the approximate training compute of notable AI models in petaFLOPs for the year 2024, as indicated by the top end of the 'Industry' bar on the log scale?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What is the publication year of the AI Index Report referenced in the text?",
+      "actual_answer": "The AI Index Report referenced in the text was published in **2026**.\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f48]",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "In 2025, AI agents still fail roughly what fraction of attempts?",
+      "actual_answer": "AI agents still fail roughly one\u202fin\u202fthree attempts on structured benchmarks in 2025.\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f73]",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What are the three specific areas that GIRAI scores countries separately on regarding fairness and bias?",
+      "actual_answer": "GIRAI evaluates fairness and bias by scoring each country separately on three dimensions:\n\n1. **Bias and unfair discrimination** \u2013 measures whether explicit measures exist to prevent and mitigate discriminatory outcomes in AI design, development, and deployment.  \n2. **Gender equality** \u2013 looks at state and non\u2011state initiatives that prevent gender bias and protect equal rights for all gender identities in AI.  \n3. **Cultural and linguistic diversity** \u2013 assesses protective measures for local languages, dialects, indigenous knowledge systems, and broader cultural diversity across the AI lifecycle.  \n\n[Source: ai_index_report_2026 (1).pdf, page 155]",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What is the average Foundation Model Transparency Index score for the 'labor' dimension in 2025?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What was the percentage point increase in optimism for Germany regarding the benefits of AI outweighing the drawbacks between 2022 and 2025?",
+      "actual_answer": "I cannot answer this from the provided documents. (The generated answer did not cite its sources.)",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "From which year onwards did the AI Index team limit their PubMed search results for publications on AI in drug discovery?",
+      "actual_answer": "The AI Index team restricted their PubMed search for AI\u2011in\u2011drug\u2011discovery publications to articles published **from 2018 onward**\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f410].",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "In 2025, what was the most common release type for notable AI models, and how many models were made available this way?",
+      "actual_answer": "I cannot answer this from the provided documents. (The generated answer did not cite its sources.)",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What is the arXiv identifier for the paper by Moore and Cho on privacy-fairness-accuracy trade-offs in federated learning?",
+      "actual_answer": "The paper\u2019s arXiv identifier is **arXiv:2503.16233**\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f395].",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.1,
+      "passed": false
+    },
+    {
+      "question": "What are the four distinct roles in which AI can cause harm?",
+      "actual_answer": "AI can cause harm in four distinct roles:\u202fas a **perpetrator**, an **instigator**, a **facilitator**, or an **enabler**\u202f[Source: ai_index_report_2026 (1).pdf, page 139].",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What percentage of university students reported using GenAI to support their studies in 2025?",
+      "actual_answer": "In the 2025 Chegg Global Student Survey,\u202f80\u202fpercent of university students said they had used generative AI to support their learning\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f303].",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What percentage of countries in Asia and Oceania have evidence on cultural and linguistic diversity in AI based on government actions?",
+      "actual_answer": "I cannot answer this from the provided documents. (The generated answer did not cite its sources.)",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "How many countries had formal AI strategies that continued to grow?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What is the purpose of the GAIA benchmark for AI agents, and what key skills does it evaluate?",
+      "actual_answer": "The GAIA benchmark is a **general\u2011assistant benchmark** created by Meta (May\u202f2024) to measure whether AI agents can solve the kinds of **multistep, real\u2011world questions** that a capable digital assistant must handle.\u202fIt evaluates agents on skills such as **web\u2011browser use, file\u2011handling operations, and reasoning across multiple information sources** in order to complete a task end\u2011to\u2011end.\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f112]",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "Why might some countries have low scores in the privacy and data governance dimension of the Global Index on Responsible AI (GIRAI), according to the text?",
+      "actual_answer": "I cannot answer this from the provided documents. (The generated answer did not cite its sources.)",
+      "category": "conceptual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What is a key challenge in applying AI to biological research highlighted by the text, particularly concerning the types of data available?",
+      "actual_answer": "A major obstacle is the **mismatch between the abundance of raw genomic sequences and the scarcity of functional\u2011perturbation data that tells how biological systems react to interventions**.  Genomic sequence data is plentiful, but the corresponding measurements of system responses are far fewer, leaving a \u201cwide gap\u201d that limits AI\u2019s ability to move from prediction to truly functional, experimental insight.  This data imbalance is echoed across other biological subfields, where training datasets are often sparse, biased toward well\u2011studied taxa, and lack standardized formats, further hampering AI\u2011driven research.  \n\n[Source: ai_index_report_2026 (1).pdf, page\u202f242]",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "passed": false
+    },
+    {
+      "question": "What does the AI Index Report 2026 suggest about the growth trajectory of AI-related research and development (R&D) activity across selected countries from 2010 to 2025?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "conceptual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What trend in market participation is observed in the FDA 510(k)-cleared AI/ML-enabled medical device sector from 2023 to 2025?",
+      "actual_answer": "From 2023 through 2025 the FDA 510(k)\u2011cleared AI/ML\u2011enabled medical\u2011device market has continued to broaden, with a steady stream of new companies entering the space.\u202fIn 2023, 103 new firms received clearances; this rose to 109 new entrants in 2024 and remained high with 98 new companies in 2025, reflecting an ongoing trend of expanding market participation\u202f[Source: ai_index_report_2026 (1).pdf, page 274].",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What does the concept of 'jagged intelligence' in AI models illustrate about their capabilities, as highlighted by their performance in mathematical Olympiads versus tasks like reading analog clocks?",
+      "actual_answer": "The term **\u201cjagged intelligence\u201d** is used to describe the uneven distribution of AI capabilities\u202f\u2013\u202fmodels can reach expert\u2011level performance on some tasks while still performing poorly on others.\u202fThe AI Index report highlights this contrast by showing that:\n\n* AI models are able to **win a gold medal at the International Mathematical Olympiad (IMO)**, demonstrating advanced reasoning and problem\u2011solving in mathematics.\u202fFor example, Gemini Deep Think earned a gold medal with 35 points\u202f[Source: ai_index_report_2026 (1).pdf, page 72] and the same point is reiterated in the report\u2019s overview\u202f[Source: ai_index_report_2026 (1).pdf, page 10].\n\n* The **same top\u2011performing models struggle with a basic perceptual task**\u2014reading analog clocks.\u202fOn ClockBench, the best model correctly read analog clocks only **about 50\u202f% of the time**, far below the 90\u202f% accuracy achieved by humans\u202f[Source: ai_index_report_2026 (1).pdf, page 72] (also noted as ~50.1\u202f% in the summary)\u202f[Source: ai_index_report_2026 (1).pdf, page 10].\n\nThus, \u201cjagged intelligence\u201d illustrates that AI systems can exhibit **high competence in complex, academic domains** (e.g., competition mathematics) while **still lacking reliability in simple, everyday tasks** such as telling time from an analog clock.",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What trend in AI-driven protein research publications does the 2026 AI Index report highlight between 2024 and 2025?",
+      "actual_answer": "The 2026 AI Index report notes that AI\u2011driven protein\u2011research output expanded dramatically between\u202f2024\u202fand\u202f2025, rising from\u202f2\u202f,259\u202fpublications in\u202f2024\u202fto\u202f3\u202f,855\u202fpublications in\u202f2025\u2014a growth of roughly\u202f71\u202fpercent\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f258].  \n\nWithin that overall increase, the relative composition shifted:  \n\n* **Protein\u2011drug interaction papers** grew to become the largest sub\u2011category, climbing from\u202f49.9\u202f% of all protein\u2011research papers in\u202f2024\u202fto\u202f54.4\u202f% in\u202f2025.  \n* **Protein\u2011structure prediction** fell in relative share, dropping from\u202f28.7\u202f% of the 2024 output to\u202f23.9\u202f% in\u202f2025.  \n* **Function prediction** and **synthetic protein design** remained roughly stable in share, with function prediction moving slightly upward (9.7\u202f% \u2192\u202f10.4\u202f%) and synthetic design edging down (11.7\u202f% \u2192\u202f11.3\u202f%).  \n\nThese changes suggest a maturing of structure\u2011prediction methods and a growing focus on therapeutic applications of AI\u2011driven protein research.",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "passed": false
+    },
+    {
+      "question": "What is a key challenge in measuring progress across research groups in carbon cycle quantification, and what existing datasets are being used to address this?",
+      "actual_answer": "I cannot answer this from the provided documents. (The generated answer did not cite its sources.)",
+      "category": "conceptual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "How do patient and public perspectives influence the implementation of AI technologies in clinical care?",
+      "actual_answer": "Patient and public viewpoints shape how AI is introduced and used in clinical settings in several concrete ways:\n\n* **Conditional acceptance of AI:**  Between 2020\u202fand\u202f2025 the literature shows a ten\u2011fold rise in publications on the patient perspective of AI.  Patients tend to accept AI when it plays an assistive, non\u2011autonomous role rather than making independent clinical decisions, especially in high\u2011stakes contexts (e.g., surgery, diagnosis)\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f281].\n\n* **Demographic differences in acceptance:**  Age, gender, education and race influence whether patients endorse AI, indicating that implementation plans must consider varied patient groups\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f281].\n\n* **Preservation of the human relationship:**  A recurrent concern is the possible loss of empathic care; patients view the human\u2011provider relationship as essential, prompting designers and health systems to retain clinician\u2011patient interaction when deploying AI\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f281].\n\n* **Clinician\u2011mediated trust:**  Trust in AI is largely dependent on provider endorsement rather than direct evaluation of the technology.  Provider support functions as a key determinant of patient acceptance, meaning that implementation strategies often pair AI tools with clinician education and advocacy\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f281].\n\n* **Transparency and disclosure requirements:**  Patients prioritize knowing when AI is being used.  The \u201ctwo\u2011question decision framework\u201d (risk of harm\u202f+\u202fopportunity for patient agency) dictates when consent or notification is required.  For AI tools that carry patient\u2011level risk or allow patients to exercise choice, consent or at least notification must be built into the workflow; for low\u2011risk tools where patients have no agency, neither is required\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f282].\n\n* **Exposure to AI\u2011generated health information:**  Patients increasingly encounter AI\u2011generated content (e.g., search results, summaries) before seeing a clinician, often without regulatory oversight.  This exposure creates demand for governance, ethical frameworks, and clear communication about AI use, influencing how health systems integrate AI into patient\u2011facing services\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f255].\n\n**What is missing:**  While the documents detail patient attitudes and concerns, they provide limited explicit data on broader public perspectives (e.g., public perception or attitude beyond patients).  Consequently, the influence of non\u2011patient public opinion on AI implementation cannot be fully described from the supplied material.",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "passed": false
+    },
+    {
+      "question": "What factors influence the reliability of annualized revenue estimates for leading AI companies as discussed in the text?",
+      "actual_answer": "The report notes that the reliability of the annualized\u2011revenue numbers for the leading AI firms is affected by several factors:\n\n* **Source of the data** \u2013 the estimates are taken either from companies\u2019 own statements or from \u201cestablished media reporting,\u201d which differ in how clearly they disclose the underlying numbers.  \n* **Accounting and reporting practices** \u2013 the figures \u201cmay differ from annual recurring\u2011revenue calculations,\u201d and the way firms account for revenue can vary.  \n* **Credibility of the source** \u2013 the \u201cunderlying data varies in reliability depending on source credibility and accounting practices,\u201d meaning that some reports are more trustworthy than others.  \n\nBecause of these issues, the authors caution that the numbers should be viewed as \u201cdirectional rather than precise.\u201d\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f189]",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.95,
+      "passed": false
+    },
+    {
+      "question": "How has the energy efficiency of leading machine learning hardware evolved in terms of computational performance per watt over the past decade, and what are examples of current advanced hardware?",
+      "actual_answer": "The report notes that\u202f**energy\u2011efficiency (measured as FLOP/s per watt) of leading machine\u2011learning hardware has risen sharply over roughly the last ten\u202fyears**.  Since\u202f2016, the amount of computation that a chip can deliver per unit of power has increased by **about ten\u2011fold**\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f34].  \n\nThe chart of energy\u2011efficiency trends (2016\u20112025) shows this uplift across successive generations of accelerators.  Early\u2011generation devices such as the **NVIDIA\u202fP100** and **Google\u202fTPU\u202fv2** sit at the low\u2011efficiency end, while the most recent chips occupy the high\u2011efficiency end of the log\u2011scale plot\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f35].  \n\n**Current advanced hardware** that exemplify the highest efficiency include:  \n\n* **NVIDIA\u202fB200** (and its variant\u202fGB200) \u2013 cited as one of the most efficient leading chips\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f34].  \n* **Google\u202fTPU\u202fv5e** \u2013 also listed among the most efficient devices\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f34].  \n* Other top\u2011performers shown in the efficiency chart are **NVIDIA\u202fH100\u202fSXM5\u202f80\u202fGB**, **NVIDIA\u202fB100**, and **Google\u202fTPU\u202fv4i**\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f35].\n\nThus, over the past decade the computational performance per watt of leading ML hardware has improved roughly ten\u2011times, with the newest generations (e.g., NVIDIA\u202fB200, Google\u202fTPU\u202fv5e) delivering the highest efficiency today.",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What does the data suggest about the global adoption of national AI strategies as of 2024-2025?",
+      "actual_answer": "The data show that the adoption of formal national AI strategies accelerated sharply in 2024\u20112025, especially among countries that previously had no AI policy.  \n\n* In 2024 and 2025 a noticeably larger number of countries announced new AI strategies, with the growth concentrated in emerging economies\u202f\u2013\u202fcountries such as Ethiopia, Ghana, Nigeria (sub\u2011Saharan Africa); Sri\u202fLanka and Nepal (South and Central\u202fAsia); and Costa\u202fRica and Jamaica (Latin America and the Caribbean) all released new frameworks, while Mexico and South\u202fAfrica have strategies under development\u202f\u2013\u202fand even high\u2011income nations like Malta are updating theirs to align with the EU AI Act\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f331].  \n\n* The report notes that \u201cnational AI strategies are expanding fastest among countries that had no formal AI policy five years ago. In 2024, more than half of newly adopted strategies came from emerging economies and, as of 2025, additional countries across sub\u2011Saharan Africa, Central Asia, and the Middle East have strategies in active development\u201d\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f325].  \n\n* Consistent with this, the introductory section adds that \u201cmore than half of newly adopted national AI strategies came from developing countries entering the policy landscape for the first time\u201d\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f4].  \n\nTogether, these points indicate that by 2024\u20112025 the global landscape of AI governance is shifting: a surge of new national AI strategies is occurring in emerging and developing regions, while established economies are largely consolidating existing policies. This reflects a widening international consensus that AI is a strategic lever for state capacity, but also highlights upcoming implementation challenges, especially in regions where formal strategies are still nascent.",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "How does the Computer Science Ontology (CSO) differ from general-purpose scholarly databases like OpenAlex, Scopus, and Web of Science in representing the research landscape?",
+      "actual_answer": "The Computer Science Ontology (CSO) is an automatically\u2011generated, hierarchical ontology that maps research terms to thousands of sub\u2011topics and hundreds of thousands of relationships, enabling precise linking of specific concepts to broader research fields.\u202fBecause of this fine\u2011grained, topic\u2011rich structure, CSO provides a much more detailed and nuanced view of the research landscape than the broader, less granular classifications used by general\u2011purpose scholarly databases such as OpenAlex, Scopus, and Web of Science\u202f[Source: ai_index_report_2026 (1).pdf, page 386]. This contrast is highlighted explicitly: \u201cCompared to general\u2011purpose scholarly databases such as OpenAlex, Scopus, and Web of Science, CSO offers a more detailed and fine\u2011grained representation of the research landscape\u201d\u202f[Source: ai_index_report_2026 (1).pdf, page 386].",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "What is the primary metric used to evaluate the performance of models on the Video-MMMU benchmark, and how does the human baseline compare to the top-performing AI models?",
+      "actual_answer": "The Video\u2011MMMU benchmark evaluates models primarily with an **overall\u2011accuracy metric** \u2013 the percentage of correctly answered questions across the three question sets (perception, comprehension, and adaptation)\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f88].\n\nThe human baseline for this metric is **74.4\u202f% overall accuracy**\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f88].  No AI system reaches this level; the highest\u2011performing model, **Keye\u2011VL\u20111.5\u20118B**, attains **66\u202f%**, and the next best, **Claude\u20113.5\u2011Sonnet**, attains **65.8\u202f%**\u202f[Source: ai_index_report_2026 (1).pdf, page\u202f88].  Thus, the top AI models fall short of the human benchmark by roughly 8\u20139 percentage points.",
+      "category": "conceptual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "passed": false
+    },
+    {
+      "question": "Why is the evidence base for reliable autonomous clinical AI agents still considered early-stage despite their access to advanced capabilities like tool use and iterative reasoning?",
+      "actual_answer": "I cannot answer this from the provided documents. (The generated answer did not cite its sources.)",
+      "category": "conceptual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What is the capital of France?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "Who won the FIFA World Cup in 2022?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What is the recipe for chocolate cake?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "How many planets are in the solar system?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What is the boiling point of water?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "Who wrote Romeo and Juliet?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What is the population of Tokyo?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "How do you make a cup of tea?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What programming language was Python named after?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What is the speed of light?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "passed": true
+    }
+  ]
+}

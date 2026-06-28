@@ -1,0 +1,411 @@
+{
+  "timestamp": "20260628_083900",
+  "total": 50,
+  "passed": 0,
+  "pass_rate": 0.0,
+  "avg_faithfulness": 0.5,
+  "avg_relevancy": 0.5,
+  "overall_pass": false,
+  "results": [
+    {
+      "question": "What is the arXiv identifier for the paper \"Social AI improves well-being among female young adults\" by Zhang, E., & Lu, X.?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the accuracy percentage of Google\u2019s Gemini-3.1-Pro on the MMLU benchmark according to the text?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "How many notable AI models originated from academia in 2025 according to the AI Index Report 2026?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What percentage of respondents reported that AI agents are 'Fully scaled' in Manufacturing?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What percentage did private investment in AI grow by in 2025?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What was the score of Qwen3-Next-80B on the leaderboard?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "Which benchmark is mentioned as being used to measure planning capabilities in AI models?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What was the year of the AI Index report represented by the chart?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the earliest year for which the global AI talent distribution is provided in the dataset?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "Which countries are listed in the 'AI Authors and Inventors' section of the AI Index Report 2026?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the arXiv identifier for \"ProtAgents: Protein discovery via large language model multi-agent collaborations combining physics and machine learning\"?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "As of December 1, 2025, how many states emphasized AI in their CS standards?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "According to Figure 1.1.139, what is the approximate training compute of notable AI models in petaFLOPs for the year 2024, as indicated by the top end of the 'Industry' bar on the log scale?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the publication year of the AI Index Report referenced in the text?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "In 2025, AI agents still fail roughly what fraction of attempts?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What are the three specific areas that GIRAI scores countries separately on regarding fairness and bias?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the average Foundation Model Transparency Index score for the 'labor' dimension in 2025?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What was the percentage point increase in optimism for Germany regarding the benefits of AI outweighing the drawbacks between 2022 and 2025?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "From which year onwards did the AI Index team limit their PubMed search results for publications on AI in drug discovery?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "In 2025, what was the most common release type for notable AI models, and how many models were made available this way?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the arXiv identifier for the paper by Moore and Cho on privacy-fairness-accuracy trade-offs in federated learning?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What are the four distinct roles in which AI can cause harm?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What percentage of university students reported using GenAI to support their studies in 2025?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What percentage of countries in Asia and Oceania have evidence on cultural and linguistic diversity in AI based on government actions?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "How many countries had formal AI strategies that continued to grow?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the purpose of the GAIA benchmark for AI agents, and what key skills does it evaluate?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "Why might some countries have low scores in the privacy and data governance dimension of the Global Index on Responsible AI (GIRAI), according to the text?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is a key challenge in applying AI to biological research highlighted by the text, particularly concerning the types of data available?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What does the AI Index Report 2026 suggest about the growth trajectory of AI-related research and development (R&D) activity across selected countries from 2010 to 2025?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What trend in market participation is observed in the FDA 510(k)-cleared AI/ML-enabled medical device sector from 2023 to 2025?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What does the concept of 'jagged intelligence' in AI models illustrate about their capabilities, as highlighted by their performance in mathematical Olympiads versus tasks like reading analog clocks?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What trend in AI-driven protein research publications does the 2026 AI Index report highlight between 2024 and 2025?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is a key challenge in measuring progress across research groups in carbon cycle quantification, and what existing datasets are being used to address this?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "How do patient and public perspectives influence the implementation of AI technologies in clinical care?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What factors influence the reliability of annualized revenue estimates for leading AI companies as discussed in the text?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "How has the energy efficiency of leading machine learning hardware evolved in terms of computational performance per watt over the past decade, and what are examples of current advanced hardware?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What does the data suggest about the global adoption of national AI strategies as of 2024-2025?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "How does the Computer Science Ontology (CSO) differ from general-purpose scholarly databases like OpenAlex, Scopus, and Web of Science in representing the research landscape?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the primary metric used to evaluate the performance of models on the Video-MMMU benchmark, and how does the human baseline compare to the top-performing AI models?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "Why is the evidence base for reliable autonomous clinical AI agents still considered early-stage despite their access to advanced capabilities like tool use and iterative reasoning?",
+      "actual_answer": "",
+      "category": "conceptual",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the capital of France?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "Who won the FIFA World Cup in 2022?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the recipe for chocolate cake?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "How many planets are in the solar system?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the boiling point of water?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "Who wrote Romeo and Juliet?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the population of Tokyo?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "How do you make a cup of tea?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What programming language was Python named after?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    },
+    {
+      "question": "What is the speed of light?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "passed": false
+    }
+  ]
+}

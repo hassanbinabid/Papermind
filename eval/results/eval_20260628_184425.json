@@ -1,0 +1,46 @@
+{
+  "timestamp": "20260628_184425",
+  "total": 5,
+  "passed": 0,
+  "pass_rate": 0.0,
+  "avg_faithfulness": 0.0,
+  "threshold": 0.45,
+  "overall_pass": false,
+  "results": [
+    {
+      "question": "What is the capital of France?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.0,
+      "passed": false
+    },
+    {
+      "question": "What was the year of the AI Index report represented by the chart?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "passed": false
+    },
+    {
+      "question": "What is the accuracy percentage of Google\u2019s Gemini-3.1-Pro on the MMLU benchmark according to the text?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "passed": false
+    },
+    {
+      "question": "How do you make a cup of tea?",
+      "actual_answer": "",
+      "category": "unanswerable",
+      "faithfulness": 0.0,
+      "passed": false
+    },
+    {
+      "question": "What was the percentage point increase in optimism for Germany regarding the benefits of AI outweighing the drawbacks between 2022 and 2025?",
+      "actual_answer": "",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "passed": false
+    }
+  ]
+}
