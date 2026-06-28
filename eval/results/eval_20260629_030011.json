@@ -1,0 +1,47 @@
+{
+  "timestamp": "20260629_030011",
+  "model": "openrouter/auto",
+  "total": 5,
+  "passed": 4,
+  "pass_rate": 0.8,
+  "avg_faithfulness": 0.65,
+  "threshold": 0.45,
+  "overall_pass": true,
+  "results": [
+    {
+      "question": "What is the capital of France?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What was the year of the AI Index report represented by the chart?",
+      "actual_answer": "The AI Index report represented by the chart is from 2026 [Source: ai_index_report_2026 (1).pdf, page 56].",
+      "category": "factual",
+      "faithfulness": 0.0,
+      "passed": false
+    },
+    {
+      "question": "What is the accuracy percentage of Google\u2019s Gemini-3.1-Pro on the MMLU benchmark according to the text?",
+      "actual_answer": "Google's Gemini-3.1-Pro leads at 91.2% on the MMLU benchmark [Source: ai_index_report_2026 (1).pdf, page 81].",
+      "category": "factual",
+      "faithfulness": 0.75,
+      "passed": true
+    },
+    {
+      "question": "How do you make a cup of tea?",
+      "actual_answer": "I cannot answer this from the provided documents.",
+      "category": "unanswerable",
+      "faithfulness": 1.0,
+      "passed": true
+    },
+    {
+      "question": "What was the percentage point increase in optimism for Germany regarding the benefits of AI outweighing the drawbacks between 2022 and 2025?",
+      "actual_answer": "The percentage point increase in optimism for Germany regarding the benefits of AI outweighing the drawbacks between 2022 and 2025 was 12 percentage points [Source: ai_index_report_2026 (1).pdf, page 364].",
+      "category": "factual",
+      "faithfulness": 0.5,
+      "passed": true
+    }
+  ]
+}

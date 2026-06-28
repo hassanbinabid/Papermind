@@ -1,0 +1,332 @@
+[
+  {
+    "question": "What is the arXiv identifier for the paper \"Social AI improves well-being among female young adults\" by Zhang, E., & Lu, X.?",
+    "answer": "arXiv:2311.14706",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 425,
+    "category": "factual"
+  },
+  {
+    "question": "What is the accuracy percentage of Google\u2019s Gemini-3.1-Pro on the MMLU benchmark according to the text?",
+    "answer": "91.2%",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 81,
+    "category": "factual"
+  },
+  {
+    "question": "How many notable AI models originated from academia in 2025 according to the AI Index Report 2026?",
+    "answer": "two",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 19,
+    "category": "factual"
+  },
+  {
+    "question": "What percentage of respondents reported that AI agents are 'Fully scaled' in Manufacturing?",
+    "answer": "3%",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 198,
+    "category": "factual"
+  },
+  {
+    "question": "What percentage did private investment in AI grow by in 2025?",
+    "answer": "127.5%",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 173,
+    "category": "factual"
+  },
+  {
+    "question": "What was the score of Qwen3-Next-80B on the leaderboard?",
+    "answer": "1,156",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 159,
+    "category": "factual"
+  },
+  {
+    "question": "Which benchmark is mentioned as being used to measure planning capabilities in AI models?",
+    "answer": "PlanBen",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 98,
+    "category": "factual"
+  },
+  {
+    "question": "What was the year of the AI Index report represented by the chart?",
+    "answer": "2026",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 76,
+    "category": "factual"
+  },
+  {
+    "question": "What is the earliest year for which the global AI talent distribution is provided in the dataset?",
+    "answer": "2010",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 389,
+    "category": "factual"
+  },
+  {
+    "question": "Which countries are listed in the 'AI Authors and Inventors' section of the AI Index Report 2026?",
+    "answer": "Australia, Brazil, Canada, Denmark, Finland, France, Germany, India, Israel, Italy, Japan, Netherlands, S",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 65,
+    "category": "factual"
+  },
+  {
+    "question": "What is the arXiv identifier for \"ProtAgents: Protein discovery via large language model multi-agent collaborations combining physics and machine learning\"?",
+    "answer": "arXiv:2402.04268",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 406,
+    "category": "factual"
+  },
+  {
+    "question": "As of December 1, 2025, how many states emphasized AI in their CS standards?",
+    "answer": "four",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 305,
+    "category": "factual"
+  },
+  {
+    "question": "According to Figure 1.1.139, what is the approximate training compute of notable AI models in petaFLOPs for the year 2024, as indicated by the top end of the 'Industry' bar on the log scale?",
+    "answer": "1000",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 25,
+    "category": "factual"
+  },
+  {
+    "question": "What is the publication year of the AI Index Report referenced in the text?",
+    "answer": "2026",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 23,
+    "category": "factual"
+  },
+  {
+    "question": "In 2025, AI agents still fail roughly what fraction of attempts?",
+    "answer": "one in three",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 69,
+    "category": "factual"
+  },
+  {
+    "question": "What are the three specific areas that GIRAI scores countries separately on regarding fairness and bias?",
+    "answer": "bias and unfair discrimination, gender equality, and cultural and linguistic diversity",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 155,
+    "category": "factual"
+  },
+  {
+    "question": "What is the average Foundation Model Transparency Index score for the 'labor' dimension in 2025?",
+    "answer": "15%",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 164,
+    "category": "factual"
+  },
+  {
+    "question": "What was the percentage point increase in optimism for Germany regarding the benefits of AI outweighing the drawbacks between 2022 and 2025?",
+    "answer": "+12 percentage points",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 364,
+    "category": "factual"
+  },
+  {
+    "question": "From which year onwards did the AI Index team limit their PubMed search results for publications on AI in drug discovery?",
+    "answer": "2018",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 410,
+    "category": "factual"
+  },
+  {
+    "question": "In 2025, what was the most common release type for notable AI models, and how many models were made available this way?",
+    "answer": "API access was the most common release type, with 47 of 102 models made available this way.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 21,
+    "category": "factual"
+  },
+  {
+    "question": "What is the arXiv identifier for the paper by Moore and Cho on privacy-fairness-accuracy trade-offs in federated learning?",
+    "answer": "arXiv:2503.16233",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 395,
+    "category": "factual"
+  },
+  {
+    "question": "What are the four distinct roles in which AI can cause harm?",
+    "answer": "perpetrator, instigator, facilitator, or enabler",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 139,
+    "category": "factual"
+  },
+  {
+    "question": "What percentage of university students reported using GenAI to support their studies in 2025?",
+    "answer": "40%",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 303,
+    "category": "factual"
+  },
+  {
+    "question": "What percentage of countries in Asia and Oceania have evidence on cultural and linguistic diversity in AI based on government actions?",
+    "answer": "38%",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 157,
+    "category": "factual"
+  },
+  {
+    "question": "How many countries had formal AI strategies that continued to grow?",
+    "answer": "The number of countries with formal AI strategies continued to grow.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 323,
+    "category": "factual"
+  },
+  {
+    "question": "What is the purpose of the GAIA benchmark for AI agents, and what key skills does it evaluate?",
+    "answer": "The GAIA benchmark evaluates whether AI agents can handle multistep, real-world questions that demand skills like web browsing, file handling, and reasoning across multiple tools or systems, simulating tasks a capable assistant would perform.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 112,
+    "category": "conceptual"
+  },
+  {
+    "question": "Why might some countries have low scores in the privacy and data governance dimension of the Global Index on Responsible AI (GIRAI), according to the text?",
+    "answer": "Low scores in the privacy and data governance dimension of GIRAI may not indicate disregard for these principles but could reflect earlier stages of AI deployment and diffusion or limited institutional capacity to formalize AI-specific frameworks.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 153,
+    "category": "conceptual"
+  },
+  {
+    "question": "What is a key challenge in applying AI to biological research highlighted by the text, particularly concerning the types of data available?",
+    "answer": "A key challenge is the gap between the abundant genomic sequence data and the limited functional perturbation data, which measures how biological systems respond to interventions. This disparity hinders the comprehensive application of AI in areas like generative design and system-level biological understanding.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 242,
+    "category": "conceptual"
+  },
+  {
+    "question": "What does the AI Index Report 2026 suggest about the growth trajectory of AI-related research and development (R&D) activity across selected countries from 2010 to 2025?",
+    "answer": "The AI Index Report 2026 highlights a significant increase in AI-related R&D activity across multiple countries, with metrics such as authorship and invention outputs showing exponential growth by 2025. Countries like Saudi Arabia, Singapore, and South Korea exhibit particularly sharp rises, reaching values as high as 350, indicating a shift in global AI innovation hubs beyond traditional leaders.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 68,
+    "category": "conceptual"
+  },
+  {
+    "question": "What trend in market participation is observed in the FDA 510(k)-cleared AI/ML-enabled medical device sector from 2023 to 2025?",
+    "answer": "The trend shows a consistent broadening of market participation, as 103 new companies entered the sector in 2023, 109 in 2024, and 98 in 2025, indicating sustained growth in the number of companies developing AI/ML-enabled medical devices.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 274,
+    "category": "conceptual"
+  },
+  {
+    "question": "What does the concept of 'jagged intelligence' in AI models illustrate about their capabilities, as highlighted by their performance in mathematical Olympiads versus tasks like reading analog clocks?",
+    "answer": "Jagged intelligence illustrates that AI models can excel in highly complex tasks (e.g., achieving gold-medal performance in mathematical Olympiads) while struggling with seemingly simpler, intuitive tasks (e.g., reading analog clocks accurately), reflecting uneven and specialized competency rather than generalized human-like understanding.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 72,
+    "category": "conceptual"
+  },
+  {
+    "question": "What trend in AI-driven protein research publications does the 2026 AI Index report highlight between 2024 and 2025?",
+    "answer": "The 2026 AI Index report highlights a trend in the number of AI-driven protein research publications by comparing the publication counts between 2024 and 2025, as illustrated in Figure 6.1.1, though the specific direction of change (increase or decrease) is not provided in the text.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 258,
+    "category": "conceptual"
+  },
+  {
+    "question": "What is a key challenge in measuring progress across research groups in carbon cycle quantification, and what existing datasets are being used to address this?",
+    "answer": "A key challenge is the scarcity of shared benchmark datasets, which makes it difficult to measure progress consistently. Researchers currently rely on large observational datasets from governmental and institutional systems like FLUXNET2015, AmeriFlux, ICOS, and JapanFlux, which provide foundational carbon flux measurements for training and evaluating models to upscale local data to regional or global estimates.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 247,
+    "category": "conceptual"
+  },
+  {
+    "question": "How do patient and public perspectives influence the implementation of AI technologies in clinical care?",
+    "answer": "Patient, family, and public perspectives\u2014such as perceptions, attitudes, and concerns\u2014directly shape how AI technologies like clinical decision support systems or predictive models are deployed, integrated, and interacted with in healthcare settings. These perspectives ensure AI applications align with stakeholder viewpoints in medical decision-making and care delivery.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 411,
+    "category": "conceptual"
+  },
+  {
+    "question": "What factors influence the reliability of annualized revenue estimates for leading AI companies as discussed in the text?",
+    "answer": "The reliability of annualized revenue estimates depends on the credibility of the sources (e.g., direct company statements or established media reports) and variations in accounting practices, as the data is drawn from publicly disclosed information tracked between 2023 and 2025.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 189,
+    "category": "conceptual"
+  },
+  {
+    "question": "How has the energy efficiency of leading machine learning hardware evolved in terms of computational performance per watt over the past decade, and what are examples of current advanced hardware?",
+    "answer": "Leading machine learning hardware has become approximately 10 times more energy-efficient in computational performance per watt since 2016, compared to hardware available a decade ago. Examples of current advanced hardware include Nvidia B200 and Google TPU v5e, which demonstrate this improved efficiency.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 34,
+    "category": "conceptual"
+  },
+  {
+    "question": "What does the data suggest about the global adoption of national AI strategies as of 2024-2025?",
+    "answer": "The data indicates that while some countries have established national AI strategies for 2024 and 2025, others are still in the development phase or lack a formal strategy altogether, reflecting uneven progress in AI policy adoption worldwide.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 331,
+    "category": "conceptual"
+  },
+  {
+    "question": "How does the Computer Science Ontology (CSO) differ from general-purpose scholarly databases like OpenAlex, Scopus, and Web of Science in representing the research landscape?",
+    "answer": "CSO offers a more detailed and fine-grained hierarchical structure with thousands of subtopics, enabling precise mapping of specific terms to broader research fields, unlike the broader categorization of general-purpose databases.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 386,
+    "category": "conceptual"
+  },
+  {
+    "question": "What is the primary metric used to evaluate the performance of models on the Video-MMMU benchmark, and how does the human baseline compare to the top-performing AI models?",
+    "answer": "The primary metric used to evaluate the performance of models on the Video-MMMU benchmark is overall accuracy. The human baseline achieves 74.44% overall accuracy.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 88,
+    "category": "conceptual"
+  },
+  {
+    "question": "Why is the evidence base for reliable autonomous clinical AI agents still considered early-stage despite their access to advanced capabilities like tool use and iterative reasoning?",
+    "answer": "The evidence base is considered early-stage because, despite high performance in specific tasks (e.g., 85.5% diagnostic accuracy), broader benchmarks like MedAgentBench show a lower task success rate (69.7%) across 300 clinically derived tasks. Additionally, 84% of the 43 studies evaluating agentic systems were published in 2025, indicating that rigorous evaluation frameworks and comprehensive validation are still emerging.",
+    "source": "ai_index_report_2026 (1).pdf",
+    "page": 273,
+    "category": "conceptual"
+  },
+  {
+    "question": "What is the capital of France?",
+    "answer": "I cannot answer this from the provided documents.",
+    "category": "unanswerable"
+  },
+  {
+    "question": "Who won the FIFA World Cup in 2022?",
+    "answer": "I cannot answer this from the provided documents.",
+    "category": "unanswerable"
+  },
+  {
+    "question": "What is the recipe for chocolate cake?",
+    "answer": "I cannot answer this from the provided documents.",
+    "category": "unanswerable"
+  },
+  {
+    "question": "How many planets are in the solar system?",
+    "answer": "I cannot answer this from the provided documents.",
+    "category": "unanswerable"
+  },
+  {
+    "question": "What is the boiling point of water?",
+    "answer": "I cannot answer this from the provided documents.",
+    "category": "unanswerable"
+  },
+  {
+    "question": "Who wrote Romeo and Juliet?",
+    "answer": "I cannot answer this from the provided documents.",
+    "category": "unanswerable"
+  },
+  {
+    "question": "What is the population of Tokyo?",
+    "answer": "I cannot answer this from the provided documents.",
+    "category": "unanswerable"
+  },
+  {
+    "question": "How do you make a cup of tea?",
+    "answer": "I cannot answer this from the provided documents.",
+    "category": "unanswerable"
+  },
+  {
+    "question": "What programming language was Python named after?",
+    "answer": "I cannot answer this from the provided documents.",
+    "category": "unanswerable"
+  },
+  {
+    "question": "What is the speed of light?",
+    "answer": "I cannot answer this from the provided documents.",
+    "category": "unanswerable"
+  }
+]
