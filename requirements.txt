@@ -6,3 +6,7 @@ python-dotenv
 pyyaml
 rank-bm25
 streamlit
+fastapi
+uvicorn[standard]
+python-multipart
+
