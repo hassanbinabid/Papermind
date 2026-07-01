@@ -1,6 +1,6 @@
 sentence-transformers
 openai
-chromadb
+pinecone
 pypdf
 python-dotenv
 pyyaml
@@ -9,4 +9,3 @@ streamlit
 fastapi
 uvicorn[standard]
 python-multipart
-
