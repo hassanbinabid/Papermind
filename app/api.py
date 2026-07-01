@@ -174,8 +174,9 @@ async def ingest(file: UploadFile = File(...)):
             )
 
         # Embed and store
-        texts      = [c["text"] for c in chunks]
-        embeddings = embed_texts(texts)
+        texts = [c["text"] for c in chunks]
+        embeddings, valid_indices = embed_texts(texts)
+        chunks = [chunks[i] for i in valid_indices]
         add_documents(chunks, embeddings)
 
         # Rebuild BM25 index with new chunks
@@ -209,26 +210,41 @@ async def ingest(file: UploadFile = File(...)):
 @app.get("/documents", response_model=DocumentsResponse, tags=["Documents"])
 async def list_documents():
     """
-    Returns a list of all documents currently stored in ChromaDB,
-    with their chunk counts.
+    Returns a list of all documents currently stored in Pinecone,
+    with their chunk counts. Note: Pinecone doesn't support listing
+    all vectors directly, so we use a metadata-based approach by
+    querying with a zero vector and high top_k (limited approach for
+    free tier — for full accuracy, track sources in a separate index).
     """
-    from app.vectorstore import _get_collection
+    from app.vectorstore import _get_index, EMBEDDING_DIM
 
     try:
-        collection = _get_collection()
-        results    = collection.get(include=["metadatas"])
-        metadatas  = results["metadatas"]
+        index = _get_index()
+        stats = index.describe_index_stats()
+        total = stats.get("total_vector_count", 0)
+
+        if total == 0:
+            return DocumentsResponse(total_chunks=0, documents=[])
+
+        # Query with a neutral vector to sample metadata across the index
+        # (Pinecone free tier has no native "list all" — this samples up to 10000)
+        dummy_vector = [0.0] * EMBEDDING_DIM
+        results = index.query(
+            vector=dummy_vector,
+            top_k=min(total, 10000),
+            include_metadata=True,
+        )
+
+        source_counts: dict[str, int] = {}
+        for match in results["matches"]:
+            src = match["metadata"].get("source", "unknown")
+            source_counts[src] = source_counts.get(src, 0) + 1
+
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Could not retrieve documents: {str(e)}"
         )
-
-    # Count chunks per source document
-    source_counts: dict[str, int] = {}
-    for meta in metadatas:
-        src = meta.get("source", "unknown")
-        source_counts[src] = source_counts.get(src, 0) + 1
 
     documents = [
         DocumentInfo(source=src, chunk_count=count)
@@ -236,7 +252,7 @@ async def list_documents():
     ]
 
     return DocumentsResponse(
-        total_chunks = sum(source_counts.values()),
+        total_chunks = total,
         documents    = documents,
     )
 
@@ -244,32 +260,17 @@ async def list_documents():
 @app.delete("/documents/{source}", response_model=DeleteResponse, tags=["Documents"])
 async def delete_document(source: str):
     """
-    Remove a specific document and all its chunks from ChromaDB.
+    Remove a specific document and all its chunks from Pinecone.
     The source parameter should be the filename (e.g. 'ai_index_report_2026.pdf').
     """
-    from app.vectorstore import _get_collection
+    from app.vectorstore import _get_index
 
     try:
-        collection = _get_collection()
+        index = _get_index()
 
-        # Find all chunk IDs for this source
-        results = collection.get(
-            where={"source": source},
-            include=["metadatas"],
-        )
-        ids = results["ids"]
+        # Pinecone supports metadata-filtered delete directly
+        index.delete(filter={"source": {"$eq": source}})
 
-        if not ids:
-            raise HTTPException(
-                status_code=status.HTTP_404_NOT_FOUND,
-                detail=f"Document '{source}' not found in the database."
-            )
-
-        # Delete all chunks for this source
-        collection.delete(ids=ids)
-
-    except HTTPException:
-        raise
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
@@ -279,5 +280,6 @@ async def delete_document(source: str):
     return DeleteResponse(
         deleted = True,
         source  = source,
-        message = f"Successfully deleted {len(ids)} chunks from '{source}'.",
+        message = f"Deletion request sent for '{source}'. "
+                  f"Pinecone deletes are eventually consistent.",
     )

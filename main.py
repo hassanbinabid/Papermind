@@ -1,4 +1,3 @@
-
 """
 main.py — Entry point for PaperMind RAG (Phase 2).
 Ingests documents → builds vector + BM25 index → runs a test query.
@@ -22,9 +21,9 @@ try:
 except ImportError:
     missing.append("openai")
 try:
-    import chromadb
+    import pinecone
 except ImportError:
-    missing.append("chromadb")
+    missing.append("pinecone")
 try:
     import pypdf
 except ImportError:
@@ -54,6 +53,11 @@ load_dotenv()
 if not os.getenv("OPENROUTER_API_KEY"):
     print("❌ OPENROUTER_API_KEY is missing or empty in your .env file.")
     print("   Get one at openrouter.ai/keys")
+    sys.exit(1)
+
+if not os.getenv("PINECONE_API_KEY"):
+    print("❌ PINECONE_API_KEY is missing or empty in your .env file.")
+    print("   Get one at pinecone.io")
     sys.exit(1)
 
 # ── Imports ───────────────────────────────────────────────────────────────────
@@ -97,15 +101,19 @@ def ingest():
 
     # ── Vector embeddings ────────────────────────────────────────────────────
     print("\n[Vector Store] Generating embeddings...")
-    texts      = [c["text"] for c in chunks]
-    embeddings = embed_texts(texts)
-    stored     = add_documents(chunks, embeddings)
-    print(f"✅ Chunks stored in ChromaDB: {stored}")
+    texts = [c["text"] for c in chunks]
+    embeddings, valid_indices = embed_texts(texts)
+
+    # Keep only chunks that were successfully embedded (skip bad/empty ones)
+    valid_chunks = [chunks[i] for i in valid_indices]
+
+    stored = add_documents(valid_chunks, embeddings)
+    print(f"✅ Chunks stored in Pinecone: {stored}")
     print(f"✅ Total in collection: {collection_count()}")
 
     # ── BM25 index ───────────────────────────────────────────────────────────
     print("\n[BM25 Index] Building keyword search index...")
-    build_bm25_index(chunks)
+    build_bm25_index(valid_chunks)
 
 
 def query():
