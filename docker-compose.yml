@@ -1,0 +1,52 @@
+version: "3.9"
+
+services:
+  papermind-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Container name for easy reference
+    container_name: papermind-rag
+
+    # Map port 8000 on your machine to port 8000 in the container
+    ports:
+      - "8000:8000"
+
+    # Load secrets from your .env file
+    # Never hardcode API keys — always use env_file or environment variables
+    env_file:
+      - .env
+
+    # Mount BM25 index so it persists between container restarts
+    # (Pinecone handles vector storage — only BM25 needs local persistence)
+    volumes:
+      - ./bm25_data:/app/.chroma
+
+    # Restart policy — restart unless manually stopped
+    restart: unless-stopped
+
+    # Health check — Docker monitors this endpoint
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # ── Optional: Run ingestion as a one-off task ──────────────────────────────
+  # Run with: docker-compose run --rm ingest
+  ingest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: papermind-ingest
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./bm25_data:/app/.chroma
+    command: ["python", "main.py"]
+    profiles:
+      - tools  # Only runs when explicitly called, not with docker-compose up

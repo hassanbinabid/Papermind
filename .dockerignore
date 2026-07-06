@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+
+# Environment — never copy secrets into the image
+.env
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment — not needed inside container
+.venv
+venv
+env
+
+# Local ChromaDB — Pinecone is the cloud store, this is just BM25 cache
+.chroma
+
+# Test and eval results
+eval/results
+
+# VS Code
+.vscode
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
