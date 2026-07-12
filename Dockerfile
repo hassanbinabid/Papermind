@@ -20,7 +20,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY --chown=user app/ ./app/
 COPY --chown=user prompts/ ./prompts/
-COPY --chown=user data/ ./data/
 COPY --chown=user eval/ ./eval/
 COPY --chown=user main.py .
 COPY --chown=user chat.py .
