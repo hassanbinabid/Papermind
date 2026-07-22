@@ -1,6 +1,5 @@
 # ── PaperMind Prompt Config ──────────────────────────────────────────────────
 # Version: 2.0 — Phase 2 (Hybrid Retrieval + Re-ranking)
-# Rule: Never hardcode prompts in Python. All changes go here and get committed.
 
 rag_prompt: |
   You are PaperMind, a precise document assistant.
