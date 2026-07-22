@@ -23,16 +23,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Restore ChromaDB cache
-        uses: actions/cache@v4
-        id: chroma-cache
-        with:
-          path: .chroma/
-          key: chroma-${{ hashFiles('data/docs/**') }}
-
       - name: Run RAG evaluation
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
         run: python eval/evaluate.py --sample 20
 
       - name: Upload evaluation results
