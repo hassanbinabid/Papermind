@@ -66,12 +66,12 @@ async def startup():
 @app.get("/health", response_model=HealthResponse, tags=["System"])
 async def health():
     """
-    Health check — verifies ChromaDB is connected and LLM API is reachable.
+    Health check — verifies Pinecone is connected and LLM API is reachable.
     Used by deployment systems to confirm the server is live.
     """
     from app.vectorstore import collection_count
 
-    # Check ChromaDB
+    # Check Pinecone
     try:
         count    = collection_count()
         db_status = "ok"
@@ -87,7 +87,7 @@ async def health():
 
     return HealthResponse(
         status       = overall,
-        chromadb     = db_status,
+        pinecone     = db_status,
         llm          = llm_status,
         total_chunks = count,
         message      = (
@@ -132,7 +132,7 @@ async def query(req: QueryRequest):
 async def ingest(file: UploadFile = File(...)):
     """
     Upload a PDF or markdown file. The system chunks it, embeds it,
-    and stores it in ChromaDB + BM25 index.
+    and stores it in Pinecone + BM25 index.
     Supported formats: .pdf, .md
     """
     from app.ingest     import load_pdf, load_markdown

@@ -47,6 +47,7 @@ Score:"""
             temperature=0,
         )
         raw = response.choices[0].message.content.strip()
+        print(f"    [DEBUG] raw judge response: {raw!r}")
         numbers = re.findall(r'[01]\.?\d*', raw)
         if numbers:
             return max(0.0, min(1.0, float(numbers[0])))

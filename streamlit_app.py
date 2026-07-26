@@ -21,47 +21,48 @@ st.set_page_config(
 st.markdown("""
 <style>
     /* Main background */
-    .stApp { background-color: #0f1117; }
+    .stApp { background-color: #f7f9fc; }
 
     /* Chat message bubbles */
     .user-bubble {
-        background: #1e3a5f;
+        background: #2563eb;
         border-radius: 18px 18px 4px 18px;
         padding: 12px 18px;
         margin: 8px 0;
-        color: #e8f4fd;
+        color: #ffffff;
         font-size: 15px;
         max-width: 80%;
         margin-left: auto;
     }
     .assistant-bubble {
-        background: #1a1f2e;
-        border: 1px solid #2d3748;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
         border-radius: 18px 18px 18px 4px;
         padding: 12px 18px;
         margin: 8px 0;
-        color: #e2e8f0;
+        color: #1a202c;
         font-size: 15px;
         max-width: 85%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
     }
 
     /* Source citation chips */
     .source-chip {
         display: inline-block;
-        background: #0d3349;
-        border: 1px solid #1e6a9e;
+        background: #eaf2ff;
+        border: 1px solid #93c5fd;
         border-radius: 20px;
         padding: 3px 12px;
         margin: 3px 4px;
         font-size: 12px;
-        color: #7ec8e3;
+        color: #1d4ed8;
     }
 
     /* Input box */
     .stTextInput > div > div > input {
-        background-color: #1a1f2e !important;
-        color: #e2e8f0 !important;
-        border: 1px solid #2d3748 !important;
+        background-color: #ffffff !important;
+        color: #1a202c !important;
+        border: 1px solid #cbd5e0 !important;
         border-radius: 12px !important;
         padding: 12px 16px !important;
         font-size: 15px !important;
@@ -69,8 +70,8 @@ st.markdown("""
 
     /* Sidebar */
     [data-testid="stSidebar"] {
-        background-color: #0d1117;
-        border-right: 1px solid #1e2533;
+        background-color: #ffffff;
+        border-right: 1px solid #e2e8f0;
     }
 
     /* Header */
@@ -81,31 +82,31 @@ st.markdown("""
     .main-title {
         font-size: 2.4rem;
         font-weight: 700;
-        background: linear-gradient(90deg, #4facfe, #00f2fe);
+        background: linear-gradient(90deg, #2563eb, #06b6d4);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 0;
     }
     .main-subtitle {
-        color: #718096;
+        color: #64748b;
         font-size: 0.95rem;
         margin-top: 4px;
     }
 
     /* Status badges */
     .badge-ok {
-        background: #1a3a2a;
-        color: #68d391;
-        border: 1px solid #2f855a;
+        background: #dcfce7;
+        color: #15803d;
+        border: 1px solid #86efac;
         border-radius: 20px;
         padding: 3px 12px;
         font-size: 12px;
         font-weight: 600;
     }
     .badge-warn {
-        background: #3a2a1a;
-        color: #f6ad55;
-        border: 1px solid #c05621;
+        background: #fef3c7;
+        color: #b45309;
+        border: 1px solid #fcd34d;
         border-radius: 20px;
         padding: 3px 12px;
         font-size: 12px;
@@ -118,7 +119,12 @@ st.markdown("""
     header {visibility: hidden;}
 
     /* Divider */
-    hr { border-color: #2d3748; }
+    hr { border-color: #e2e8f0; }
+
+    /* Make body text dark by default (covers sidebar markdown too) */
+    body, .stMarkdown, [data-testid="stSidebar"] * {
+        color: #1a202c;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -155,33 +161,10 @@ with st.sidebar:
 
     st.markdown("---")
 
-    # Model info
-    st.markdown("**🤖 Model**")
-    st.markdown("`meta-llama/llama-3.3-70b-instruct:free`")
-    st.markdown("via OpenRouter")
-
-    st.markdown("**🔍 Embeddings**")
-    st.markdown("`all-MiniLM-L6-v2`")
-    st.markdown("Local · No API needed")
-
-    st.markdown("**💾 Vector Store**")
-    st.markdown("ChromaDB · Persistent")
-
-    st.markdown("---")
-
     # Clear chat
     if st.button("🗑 Clear Chat", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
-
-    st.markdown("---")
-    st.markdown(
-        "<div style='color:#4a5568; font-size:11px; text-align:center;'>"
-        "PaperMind RAG · Phase 1<br>"
-        "AI Index Report 2026"
-        "</div>",
-        unsafe_allow_html=True
-    )
 
 
 # ── Main area ─────────────────────────────────────────────────────────────────
@@ -191,22 +174,6 @@ st.markdown("""
     <p class="main-subtitle">Ask anything about your document — answers are grounded in the source.</p>
 </div>
 """, unsafe_allow_html=True)
-
-# Suggested questions
-if "messages" not in st.session_state or len(st.session_state.messages) == 0:
-    st.markdown("##### 💡 Try asking:")
-    cols = st.columns(2)
-    suggestions = [
-        "What is the main contribution of this report?",
-        "What are the key AI trends in 2026?",
-        "How has AI investment changed over the years?",
-        "What does the report say about AI safety?",
-    ]
-    for i, suggestion in enumerate(suggestions):
-        with cols[i % 2]:
-            if st.button(suggestion, use_container_width=True, key=f"sug_{i}"):
-                st.session_state.pending_question = suggestion
-                st.rerun()
 
 st.markdown("---")
 
@@ -300,4 +267,4 @@ if question and question.strip():
             "role": "assistant",
             "content": answer,
             "sources": sources,
-        })
+        }

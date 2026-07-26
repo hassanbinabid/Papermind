@@ -85,3 +85,17 @@ def load_documents(docs_dir: str) -> list[dict]:
         all_chunks.extend(chunks)
 
     return all_chunks
+if __name__ == "__main__":
+    import time
+
+    data_dir = "data/docs"  # adjust if your docs live elsewhere
+    print(f"Starting ingestion from: {data_dir}\n")
+
+    start_time = time.time()
+    all_chunks = load_documents(data_dir)
+    elapsed = time.time() - start_time
+
+    print(f"\nIngestion complete.")
+    print(f"Total documents processed: {len(set(c['source'] for c in all_chunks))}")
+    print(f"Total chunks created: {len(all_chunks)}")
+    print(f"Time taken: {elapsed:.2f}s")

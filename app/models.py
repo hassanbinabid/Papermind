@@ -57,7 +57,7 @@ class IngestResponse(BaseModel):
     """Response body for POST /ingest"""
     filename:    str = Field(description="Name of the ingested file")
     chunks:      int = Field(description="Number of chunks created")
-    total_in_db: int = Field(description="Total chunks now in ChromaDB")
+    total_in_db: int = Field(description="Total chunks now in Pinecone")
     status:      str = Field(description="Ingestion status", example="success")
 
 
@@ -69,16 +69,16 @@ class DocumentInfo(BaseModel):
 
 class DocumentsResponse(BaseModel):
     """Response body for GET /documents"""
-    total_chunks: int                = Field(description="Total chunks in ChromaDB")
+    total_chunks: int                = Field(description="Total chunks in Pinecone")
     documents:    list[DocumentInfo] = Field(description="List of ingested documents")
 
 
 class HealthResponse(BaseModel):
     """Response body for GET /health"""
     status:       str  = Field(description="Overall system status", example="ok")
-    chromadb:     str  = Field(description="ChromaDB connection status", example="ok")
+    pinecone:     str  = Field(description="Pinecone connection status", example="ok")
     llm:          str  = Field(description="LLM API status",            example="ok")
-    total_chunks: int  = Field(description="Total chunks in ChromaDB")
+    total_chunks: int  = Field(description="Total chunks in Pinecone")
     message:      str  = Field(description="Human readable status message")
 
 

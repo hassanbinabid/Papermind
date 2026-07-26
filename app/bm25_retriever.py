@@ -71,6 +71,13 @@ def bm25_search(query: str, top_k: int = 10) -> list[dict]:
     """
     Search using BM25 keyword matching.
     Returns top_k results with text, source, page, and bm25_score.
+
+    NOTE: results are returned by rank regardless of raw score sign.
+    BM25's IDF term can go negative on small corpora when a query term
+    appears in more than half the indexed chunks — filtering on
+    `score > 0` would silently discard valid candidates in that case.
+    Downstream RRF fusion only consumes rank position, not the raw
+    score value, so an unfiltered top-k by rank is the correct input.
     """
     bm25, metadata = load_bm25_index()
     tokenized_query = _tokenize(query)
@@ -80,13 +87,12 @@ def bm25_search(query: str, top_k: int = 10) -> list[dict]:
 
     results = []
     for idx in top_indices:
-        if scores[idx] > 0:
-            results.append({
-                "text":        metadata[idx]["text"],
-                "source":      metadata[idx]["source"],
-                "page":        metadata[idx]["page"],
-                "chunk_index": metadata[idx]["chunk_index"],
-                "bm25_score":  float(scores[idx]),
-            })
+        results.append({
+            "text":        metadata[idx]["text"],
+            "source":      metadata[idx]["source"],
+            "page":        metadata[idx]["page"],
+            "chunk_index": metadata[idx]["chunk_index"],
+            "bm25_score":  float(scores[idx]),
+        })
 
     return results
