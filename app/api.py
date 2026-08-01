@@ -80,10 +80,10 @@ async def health():
         db_status = f"error: {str(e)}"
 
     # Check LLM API (just verify key exists)
-    api_key    = os.getenv("OPENROUTER_API_KEY")
-    llm_status = "ok" if api_key else "missing API key"
+api_key    = os.getenv("GROQ_API_KEY")
+llm_status = "ok" if api_key else "missing API key"
 
-    overall = "ok" if db_status == "ok" and llm_status == "ok" else "degraded"
+overall = "ok" if db_status == "ok" and llm_status == "ok" else "degraded"
 
     return HealthResponse(
         status       = overall,

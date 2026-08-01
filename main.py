@@ -50,9 +50,9 @@ if missing:
 from dotenv import load_dotenv
 load_dotenv()
 
-if not os.getenv("OPENROUTER_API_KEY"):
-    print("❌ OPENROUTER_API_KEY is missing or empty in your .env file.")
-    print("   Get one at openrouter.ai/keys")
+if not os.getenv("GROQ_API_KEY"):
+    print("❌ GROQ_API_KEY is missing or empty in your .env file.")
+    print("   Get one at console.groq.com/keys")
     sys.exit(1)
 
 if not os.getenv("PINECONE_API_KEY"):
