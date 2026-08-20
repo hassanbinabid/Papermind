@@ -1,35 +1,33 @@
-﻿name: PaperMind RAG Evaluation
-
+name: PaperMind RAG Evaluation
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
 jobs:
   evaluate:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
-
       - name: Install dependencies
         run: pip install -r requirements.txt
-
+      - name: Run ingestion (build BM25 + vector index)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
+        run: python -c "from main import ingest; ingest()"
       - name: Run RAG evaluation
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }}
         run: python eval/evaluate.py --sample 20
-
       - name: Upload evaluation results
         uses: actions/upload-artifact@v4
         if: always()
