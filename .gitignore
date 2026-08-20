@@ -3,5 +3,8 @@
 .chroma/
 __pycache__/
 *.pyc
-data/
-data/docs/*.pdf
+data/*
+!data/docs/
+data/docs/*
+!data/docs/*.pdf
+!data/docs/*.md
