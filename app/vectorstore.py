@@ -1,4 +1,4 @@
-"""
+﻿"""
 vectorstore.py — Pinecone-backed vector store (replaces local ChromaDB).
 Persistent, cloud-hosted vector storage so the database survives
 server restarts on platforms like Render.
@@ -6,6 +6,7 @@ server restarts on platforms like Render.
 
 import hashlib
 import os
+import time
 from dotenv import load_dotenv
 from pinecone import Pinecone, ServerlessSpec
 
@@ -75,8 +76,6 @@ def add_documents(chunks: list[dict], embeddings: list[list[float]]) -> int:
     vectors = []
     for chunk, embedding in zip(chunks, embeddings):
         vec_id = _make_id(chunk["source"], chunk["page"], chunk["chunk_index"])
-        # Pinecone metadata values must be str/int/float/bool/list-of-str
-        # Store the chunk text in metadata so we can retrieve it later
         text = _clean_text(chunk["text"])[:35000]  # stay under 40KB metadata limit
         vectors.append({
             "id": vec_id,
@@ -89,7 +88,6 @@ def add_documents(chunks: list[dict], embeddings: list[list[float]]) -> int:
             }
         })
 
-    # Upsert in batches of 100 (Pinecone recommended batch size)
     batch_size = 100
     total_upserted = 0
     for i in range(0, len(vectors), batch_size):
@@ -121,8 +119,6 @@ def query_documents(query_embedding: list[float], top_k: int = 5) -> list[dict]:
             "source":      meta.get("source", "unknown"),
             "page":        meta.get("page", 0),
             "chunk_index": meta.get("chunk_index", 0),
-            # Pinecone returns similarity score (higher = better);
-            # convert to distance-like value for consistency with old code
             "distance":    round(1 - match["score"], 4),
         })
 
@@ -134,6 +130,26 @@ def collection_count() -> int:
     index = _get_index()
     stats = index.describe_index_stats()
     return stats.get("total_vector_count", 0)
+
+
+def wait_for_vectors(min_count: int = 1, timeout: int = 90, interval: int = 5) -> int:
+    """
+    Poll Pinecone's index stats until at least min_count vectors are visible,
+    or until timeout seconds have passed. Pinecone's describe_index_stats()
+    is eventually consistent, so a count of 0 immediately after an upsert
+    doesn't necessarily mean ingestion failed -- it may just not have propagated yet.
+
+    Returns the final count observed (may be 0 if timeout is reached).
+    """
+    elapsed = 0
+    count = collection_count()
+    while count < min_count and elapsed < timeout:
+        print(f"  [Pinecone] Waiting for index to reflect ingested vectors "
+              f"(count={count}, elapsed={elapsed}s)...")
+        time.sleep(interval)
+        elapsed += interval
+        count = collection_count()
+    return count
 
 
 def _get_collection():

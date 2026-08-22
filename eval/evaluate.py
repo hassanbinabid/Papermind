@@ -62,25 +62,22 @@ def evaluate(category=None, sample=None):
     from app.pipeline import run_rag_pipeline
     from app.hybrid_retriever import hybrid_retrieve
     from app.reranker import rerank
-    from app.vectorstore import collection_count
+    from app.vectorstore import wait_for_vectors
 
-    # ── API key check ─────────────────────────────────────────────────────────
     api_key = os.getenv("OPENROUTER_API_KEY")
     if not api_key:
-        print("❌ OPENROUTER_API_KEY not found.")
+        print("[X] OPENROUTER_API_KEY not found.")
         print("   Locally: add it to your .env file")
         print("   CI: add it as a GitHub Actions secret named OPENROUTER_API_KEY")
         sys.exit(1)
 
     client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1")
 
-    # ── ChromaDB check ────────────────────────────────────────────────────────
-    count = collection_count()
+    count = wait_for_vectors(min_count=1, timeout=90, interval=5)
     if count == 0:
-        print("⚠ ChromaDB is empty — no documents have been ingested yet.")
-        print("  Run python main.py first to ingest your documents.")
-        print("  Skipping evaluation and marking as passed for CI.")
-        sys.exit(0)
+        print("[X] Vector store is empty after waiting -- ingestion did not populate it.")
+        print("   Treating this as a CI failure rather than a silent pass.")
+        sys.exit(1)
 
     print("=" * 60)
     print("PAPERMIND RAG EVALUATION")
@@ -95,6 +92,7 @@ def evaluate(category=None, sample=None):
     results      = []
     faith_scores = []
     failures     = []
+    refusals     = 0
 
     for i, item in enumerate(dataset, start=1):
         question = item["question"]
@@ -113,6 +111,10 @@ def evaluate(category=None, sample=None):
             print(f"  Pipeline error: {e}")
             actual_answer = ""
             contexts      = []
+
+        refusal_phrases = ["i cannot answer", "not found in the provided", "do not contain", "generated answer did not cite"]
+        if any(p in actual_answer.lower() for p in refusal_phrases):
+            refusals += 1
 
         faith  = score_faithfulness(question, actual_answer, contexts, client)
         faith_scores.append(faith)
@@ -133,6 +135,7 @@ def evaluate(category=None, sample=None):
     avg_faith    = sum(faith_scores) / len(faith_scores)
     pass_rate    = sum(1 for r in results if r["passed"]) / len(results)
     overall_pass = avg_faith >= FAITHFULNESS_THRESHOLD
+    refusal_rate = refusals / len(results)
 
     print("\n" + "=" * 60)
     print("RESULTS")
@@ -141,6 +144,7 @@ def evaluate(category=None, sample=None):
     print(f"  Passed:           {sum(1 for r in results if r['passed'])}/{len(results)}")
     print(f"  Pass rate:        {pass_rate:.1%}")
     print(f"  Avg Faithfulness: {avg_faith:.3f} (need >= {FAITHFULNESS_THRESHOLD})")
+    print(f"  Refusals:         {refusals}/{len(results)} ({refusal_rate:.1%})")
     print(f"  Overall:          {'PASSED' if overall_pass else 'FAILED'}")
 
     if failures:
@@ -159,6 +163,7 @@ def evaluate(category=None, sample=None):
             "passed":           sum(1 for r in results if r["passed"]),
             "pass_rate":        round(pass_rate, 4),
             "avg_faithfulness": round(avg_faith, 4),
+            "refusal_rate":     round(refusal_rate, 4),
             "threshold":        FAITHFULNESS_THRESHOLD,
             "overall_pass":     overall_pass,
             "results":          results,
